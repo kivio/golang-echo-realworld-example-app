@@ -28,7 +28,7 @@ RUN go install -installsuffix cgo -ldflags="-w -s" && \
 #
 # 2. Runtime Container
 #
-FROM alpine
+FROM alpine AS runner
 
 LABEL maintainer="Sina Saeidi <xesina@gmail.com>"
 
