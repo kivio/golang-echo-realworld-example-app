@@ -19,7 +19,7 @@ RUN go mod download
 
 COPY . /src
 
-RUN ls -al
+RUN ls -al /src
 
 # Build components.
 # Put built binaries and runtime resources in /app dir ready to be copied over or used.
