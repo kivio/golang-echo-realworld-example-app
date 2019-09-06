@@ -19,6 +19,8 @@ RUN go mod download
 
 COPY . /src
 
+RUN ls -al
+
 # Build components.
 # Put built binaries and runtime resources in /app dir ready to be copied over or used.
 RUN go install -installsuffix cgo -ldflags="-w -s" && \
